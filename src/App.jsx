@@ -28,15 +28,14 @@ const App = () => {
 <Header/>
 <main className="main">
 
-  <section className="intro">
-  
+<section className="intro">  
 <h1> Next generation digital banking </h1>
-
 <p className='content'>
 
  Take your financial life online. Your Easybank account will be a one-stop-shop 
  for spending, saving, budgeting, investing, and much more.
 </p>
+<button className='invite-btn mobile'>Request Invite</button>
 </section>
   
   <section className="reasons">

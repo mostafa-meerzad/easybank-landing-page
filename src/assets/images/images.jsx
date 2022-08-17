@@ -69,9 +69,9 @@ function Budgeting(){
     )
 }
 
-function Close(){
+function Close({className}){
     return(
-        <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+        <svg className={className + " menu-icon"} xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
   <g id="icon-close" transform="translate(-0.161 -0.661)">
     <path id="Path_1" data-name="Path 1" d="M.868.661l16.97,16.97-.706.708L.162,1.369Z" fill="#2d314d" fillRule="evenodd"/>
     <path id="Path_2" data-name="Path 2" d="M.161,17.632,17.131.662l.708.706L.869,18.338Z" fill="#2d314d" fillRule="evenodd"/>
@@ -90,9 +90,9 @@ function Facebook(){
     )
 }
 
-function Hamburger(){
+function Hamburger({className}){
     return(
-        <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11">
+        <svg className={className + " menu-icon"} id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11">
   <path id="Path_1" data-name="Path 1" d="M0,0H24V1H0ZM0,5H24V6H0Zm0,5H24v1H0Z" fill="#2d314d" fillRule="evenodd"/>
 </svg>
 

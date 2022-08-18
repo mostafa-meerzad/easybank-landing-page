@@ -73,8 +73,8 @@ const App = () => {
 </main>
 <footer className='footer'>
 
-  <div className="social-media">
     <Logo/>
+  <div className="social-media">
     <Facebook/>
     <Youtube/>
     <Twitter/>
@@ -93,11 +93,11 @@ const App = () => {
     <li className="link">  Privacy Policy</li>
   </menu>
 
-  <div>
+  
     <button className="invite-btn">Request Invite</button>
-    <span>/ © Easybank. All Rights Reserved</span>
+    <small className='copy-right'>© Easybank. All Rights Reserved</small>
 
-  </div>
+  
 </footer>
 </>
   );

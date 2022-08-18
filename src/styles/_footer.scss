@@ -1,0 +1,51 @@
+@use "./variables";
+
+footer {
+  background-color: variables.$dark-blue;
+  padding: calc(variables.$padding + 1rem);
+  text-align: center;
+  #logo {
+    // border: 2px solid red;
+    // fill: ;
+    #Path_1 {
+      fill: variables.$white;
+    }
+  }
+  .social-media {
+    // padding: calc(variables.$padding) calc(variables.$padding + 2rem);
+    display: flex;
+    justify-content: space-between;
+    max-width: 23rem;
+    // min-width: 10rem;
+    margin: calc(variables.$padding + .4rem) auto;
+    // border: 2px solid red;
+
+    & svg {
+      // height: 90px;
+      // view-box:0 0 30 30  ;
+    }
+  }
+
+  .copy-right {
+    display: block;
+    color: variables.$grayish-blue;
+  }
+  .contacts {
+    // margin: 0;
+    // list-style-type: none;
+    // border: 2px solid red;
+    padding: 0;
+
+    .link {
+      list-style: none;
+      color: variables.$light-grayish-blue;
+      padding: calc(variables.$padding - 1rem) 0;
+      margin: 0;
+      font-weight: 300;
+      // border: 2px solid red;
+    }
+  }
+  .invite-btn{
+    margin: calc(variables.$padding + .4rem) 0;
+  }
+}

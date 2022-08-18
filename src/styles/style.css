@@ -1,5 +1,224 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap");
-html {
-  font-size: 18px;
+.main-header {
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  z-index: 1;
+  margin: 0;
+  background-color: hsl(0deg, 0%, 98%);
+}
+.main-header .menu-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-header .menu-icon {
+  display: none;
+}
+.main-header .menu-icon.active {
+  display: block;
+}
+.main-header nav {
+  left: 0;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 900%;
+  top: 100%;
+  background-image: linear-gradient(hsl(233deg, 26%, 24%), transparent);
+}
+.main-header nav menu {
+  padding: 1.5rem;
+  width: 90vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 5px;
+  z-index: 1;
+}
+.main-header nav menu .nav-link {
+  padding: calc(1.5rem - 0.6em);
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.main-header nav.active {
+  display: flex;
+}
+.main-header .invite-btn {
+  display: none;
+}
+
+.intro {
+  position: relative;
+  margin: 0;
+  background-image: url("../assets//images/image-mockups.png"), url("../assets/images/bg-intro-mobile.svg");
+  background-size: 90vw, 100vw;
+  background-position: center -32vw, 0 -18vw;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 98%);
+  padding-top: 80%;
+}
+.intro h1 {
+  font-size: 2.4em;
+  text-align: center;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+.intro .content {
+  margin-bottom: 2.5rem;
+}
+.intro .invite-btn {
+  margin: 0 auto;
+}
+
+.reasons > .content {
+  margin-bottom: 4rem;
+}
+.articles {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.articles h2 {
+  margin: 1rem 0 2.3rem;
+}
+.articles .article {
+  max-width: 30rem;
+  margin: 1.7rem auto;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 2.5rem;
+}
+.articles .article img {
+  width: 100%;
+  max-width: 30rem;
+  height: 55vw;
+  max-height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 0.7em;
+  border-radius: 5px 5px 0 0;
+}
+.articles .article .content {
+  text-align: start;
+  font-size: 0.84em;
+}
+.articles .article .title {
+  font-size: 1.1em;
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+}
+.articles .article .author {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+.articles .article *:not(img) {
+  padding: 0 1.9rem;
+  text-align: start;
+}
+
+footer {
+  background-color: hsl(233deg, 26%, 24%);
+  padding: 2.5rem;
+  text-align: center;
+}
+footer #logo #Path_1 {
+  fill: hsl(0deg, 0%, 100%);
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  max-width: 23rem;
+  margin: 1.9rem auto;
+}
+footer .copy-right {
+  display: block;
+  color: hsl(233deg, 8%, 62%);
+}
+footer .contacts {
+  padding: 0;
+}
+footer .contacts .link {
+  list-style: none;
+  color: hsl(220deg, 16%, 96%);
+  padding: 0.5rem 0;
+  margin: 0;
+  font-weight: 300;
+}
+footer .invite-btn {
+  margin: 1.9rem 0;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
   font-family: "Public Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, .nav-link {
+  color: hsl(233deg, 26%, 24%);
+}
+
+p, .author {
+  color: hsl(233deg, 8%, 62%);
+}
+
+.invite-btn {
+  border: none;
+  outline: none;
+  padding: 0.9rem 1.9rem;
+  font-weight: bold;
+  border-radius: 100px;
+  background-image: linear-gradient(110deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0deg, 0%, 100%);
+  margin: 0 auto;
+}
+
+.content {
+  line-height: 1.7em;
+  text-align: center;
+  padding: 0 0.5em;
+  font-size: 0.98rem;
+  word-spacing: 0px;
+  margin: 0;
+}
+
+.reason {
+  margin: 2rem 0;
+}
+
+section {
+  padding: 4.5rem 1.5rem;
+  text-align: center;
+}
+section .content {
+  max-width: 35rem;
+  margin: auto;
+}
+section h2 {
+  padding: 0 2.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 1rem 1rem;
+}
+
+section:nth-child(2n+2) {
+  background-color: hsl(220deg, 16%, 96%);
+}
+
+.menu {
+  list-style: none;
+  margin: 1.5rem auto;
 }/*# sourceMappingURL=style.css.map */

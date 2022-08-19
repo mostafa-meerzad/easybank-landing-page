@@ -10,33 +10,33 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content:flex-end;
-    // align-items: center;
     flex-direction: column;
     background-color: variables.$very-light-gray;
-    // padding-bottom: 2rem;
-    // height: 100vh;
-    // border: 2px solid red;
-    // padding-bottom: 4rem;
-    padding-top: 80%;
-    
-    h1{
+    padding-bottom: 5.5rem !important;
+    padding-top: 83% !important;
+
+    .intro-title{
         font-size: 2.4em;
         text-align: center;
         font-weight: 400;
         margin: .5em 0 ;
-        // border:2px solid red;
+   
     }
-    .content{
+    .text-content{
         margin-bottom:variables.$padding + 1rem;
-        // margin: 0;
+      
     }
-p{
-    // border:2px solid red;
+   
+    @media all and (min-width:variables.$desktop-breakpoint){
+        // url("../assets/images/image-mockups.png"),
+        background-image:   url("../assets/images/bg-intro-desktop.svg");
 
-}
-    .invite-btn{
-        margin: 0   auto ;
-        // border:2px solid red;
+        background-size:80%;
+        background-position: 47.5vw  -16.5vw  ;
 
+        padding-top: 0;
+        align-items: flex-start;
     }
+
+    
 }

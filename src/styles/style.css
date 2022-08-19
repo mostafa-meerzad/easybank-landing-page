@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5em;
+  padding: 1.5rem;
   z-index: 1;
   margin: 0;
-  background-color: hsl(0deg, 0%, 98%);
+  background-color: hsl(0deg, 0%, 100%);
 }
 .main-header .menu-icon-container {
   display: flex;
@@ -40,11 +40,12 @@
   align-items: center;
   flex-direction: column;
   background-color: hsl(0deg, 0%, 98%);
+  margin: 1.5rem auto;
   border-radius: 5px;
   z-index: 1;
 }
 .main-header nav menu .nav-link {
-  padding: calc(1.5rem - 0.6em);
+  padding: calc(1.5rem - 0.7em);
   font-size: 1.1em;
   font-weight: 600;
 }
@@ -85,10 +86,11 @@
     max-width: fit-content;
     padding: 0;
     margin: 0;
+    background-color: hsl(0deg, 0%, 100%);
   }
   .main-header nav menu .nav-link {
     margin: 0 1.6rem;
-    padding: 3rem 0;
+    padding: 1.8rem 0;
     color: hsl(233deg, 8%, 62%);
   }
   .main-header nav menu .nav-link:hover::after {
@@ -115,29 +117,53 @@
   justify-content: flex-end;
   flex-direction: column;
   background-color: hsl(0deg, 0%, 98%);
-  padding-top: 80%;
+  padding-bottom: 5.5rem !important;
+  padding-top: 83% !important;
 }
-.intro h1 {
+.intro .intro-title {
   font-size: 2.4em;
   text-align: center;
   font-weight: 400;
   margin: 0.5em 0;
 }
-.intro .content {
+.intro .text-content {
   margin-bottom: 2.5rem;
 }
-.intro .invite-btn {
-  margin: 0 auto;
+@media all and (min-width: 1440px) {
+  .intro {
+    background-image: url("../assets/images/bg-intro-desktop.svg");
+    background-size: 80%;
+    background-position: 47.5vw -16.5vw;
+    padding-top: 0;
+    align-items: flex-start;
+  }
 }
 
-.reasons > .content {
-  margin-bottom: 4rem;
+.features {
+  background-color: hsl(220deg, 16%, 96%);
+  padding-bottom: 2rem !important;
 }
+.features .features-title {
+  width: 65vw;
+  margin: auto;
+}
+.features .text-content {
+  margin: 1.3rem auto 4rem;
+  opacity: 0.9;
+}
+.features .feature {
+  margin: 2rem 0;
+}
+.features .feature .content {
+  margin: auto;
+}
+.features .feature .title {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
 .articles {
   background-color: hsl(0deg, 0%, 98%);
-}
-.articles h2 {
-  margin: 1rem 0 2.3rem;
 }
 .articles .article {
   max-width: 30rem;
@@ -146,10 +172,10 @@
   border-radius: 5px;
   padding-bottom: 2.5rem;
 }
-.articles .article img {
+.articles .article .article-img {
   width: 100%;
   max-width: 30rem;
-  height: 55vw;
+  height: 54vw;
   max-height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -158,51 +184,63 @@
 }
 .articles .article .content {
   text-align: start;
-  font-size: 0.84em;
+  font-size: 0.85em;
+  line-height: 1.2rem;
 }
 .articles .article .title {
   font-size: 1.1em;
   margin: 0 0 0.5rem;
+  opacity: 0.9;
   font-weight: 500;
 }
 .articles .article .author {
-  font-size: 0.7em;
+  font-size: 0.65em;
   font-weight: 400;
+  color: hsl(233deg, 8%, 62%);
+  opacity: 0.9;
 }
 .articles .article *:not(img) {
   padding: 0 1.9rem;
   text-align: start;
 }
 
-footer {
+.footer {
   background-color: hsl(233deg, 26%, 24%);
   padding: 2.5rem;
   text-align: center;
 }
-footer #logo #Path_1 {
+.footer #logo #Path_1 {
   fill: hsl(0deg, 0%, 100%);
 }
-footer .social-media {
+.footer .social-media {
   display: flex;
-  justify-content: space-between;
-  max-width: 23rem;
+  justify-content: space-around;
+  width: 70%;
+  max-width: 20rem;
+  min-width: 10rem;
   margin: 1.9rem auto;
 }
-footer .copy-right {
+.footer .social-media svg {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+.footer .copy-right {
   display: block;
   color: hsl(233deg, 8%, 62%);
+  opacity: 0.9;
 }
-footer .contacts {
+.footer .contacts {
   padding: 0;
 }
-footer .contacts .link {
+.footer .contacts .contact-link {
   list-style: none;
   color: hsl(220deg, 16%, 96%);
   padding: 0.5rem 0;
   margin: 0;
   font-weight: 300;
+  opacity: 0.9;
 }
-footer .invite-btn {
+.footer .invite-btn {
   margin: 1.9rem 0;
 }
 
@@ -217,18 +255,14 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, .nav-link {
+h1, h2, h3, .nav-link {
   color: hsl(233deg, 26%, 24%);
-}
-
-p, .author {
-  color: hsl(233deg, 8%, 62%);
 }
 
 .invite-btn {
   border: none;
   outline: none;
-  padding: 0.9rem 1.9rem;
+  padding: 0.9rem 2.2rem;
   font-weight: bold;
   border-radius: 100px;
   background-image: linear-gradient(110deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
@@ -236,39 +270,29 @@ p, .author {
   margin: 0 auto;
 }
 
-.content {
-  line-height: 1.7em;
+.text-content {
+  line-height: 1.65em;
   text-align: center;
-  padding: 0 0.5em;
   font-size: 0.98rem;
   word-spacing: 0px;
-  margin: 0;
-}
-
-.reason {
-  margin: 2rem 0;
-}
-
-section {
-  padding: 4.5rem 1.5rem;
-  text-align: center;
-}
-section .content {
-  max-width: 35rem;
-  margin: auto;
-}
-section h2 {
-  padding: 0 2.5rem;
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 0 1rem 1rem;
-}
-
-section:nth-child(2n+2) {
-  background-color: hsl(220deg, 16%, 96%);
+  margin: 0 auto;
+  color: hsl(233deg, 8%, 62%);
+  opacity: 0.9;
+  max-width: 40rem;
 }
 
 menu {
-  list-style: none;
-  margin: 1.5rem auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intro, .features, .articles {
+  padding: 4.5rem 1.5rem;
+  text-align: center;
+}
+
+.features-title, .articles-title {
+  font-weight: 500;
+  font-size: 1.95rem;
 }/*# sourceMappingURL=style.css.map */

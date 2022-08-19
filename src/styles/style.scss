@@ -1,8 +1,7 @@
 @use "./header";
-
 @use "./intro-section";
 @use "./variables";
-@use "./reasons";
+@use "./features";
 @use "./articles";
 @use "./footer";
 
@@ -27,37 +26,20 @@ $font-size: 18px;
   // margin: 0;
 }
 body {
-  // font-size: $font-size;
-
   font-family: "Public Sans", sans-serif;
   padding: 0;
   margin: 0 ;
-  // width: 100vw;
-  // border: 2px solid red;
-  // max-width: 30rem;
-
-
 }
 
-h1, h2, h3, h4, h5, .nav-link{
+h1, h2, h3, .nav-link{
   color: variables.$dark-blue;
-  // margin-top:0;
 }
 
-p, .author{
-  color: variables.$grayish-blue;
-} 
-// #root{
-//   margin: 0;
-//   border: 2px solid blue;
-//   padding: 0;
-// }
 
 .invite-btn{
-  // background-color:red;
   border: none;
   outline: none;
-  padding: .9rem 1.9rem;
+  padding: .9rem 2.2rem;
   font-weight: bold;
   border-radius: 100px;
   background-image:linear-gradient(110deg,variables.$lime-green, variables.$bright-cyan);
@@ -65,59 +47,32 @@ p, .author{
   margin: 0 auto;
 }
 
-.content{
-  line-height: 1.7em;
+.text-content{
+  line-height: 1.65em;
   text-align: center;
-  padding: 0 .5em;
+  // padding: 0 ;
   font-size: .98rem;
   word-spacing:0px;
-  margin: 0;
-}
+  margin: 0 auto;
+  // color: greenyellow;
+  color: variables.$grayish-blue;
+  opacity: .9;
 
-
-.reason{
-  // border: 2px solid red;
-  margin: 2rem 0;
-  
-}
-section{
-  padding:calc( variables.$padding + 3rem) calc( variables.$padding );
-  text-align: center;
-  // border: 2px solid red;
-  // margin: 0 auto;
-
-  // max-width: 30rem;
-  // & > .content{
-    // margin-bottom:calc( variables.$padding + 1rem);
-    // border: 2px solid red;
-  // }
-
-  .content{
-    max-width: 35rem;
-    margin: auto;
-  }
-
-  h2{
-    padding:0 calc(variables.$padding + 1rem);
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 0 calc(variables.$padding - .5rem) calc(variables.$padding - .5rem);
-
-    // border: 2px solid red;
-  }
-  // h3{
-    // max-width: 35rem;
-    // margin: auto;
-  // }
-}
-section:nth-child(2n + 2){
-background-color: variables.$light-grayish-blue;
-
+  max-width: 40rem;
 
 }
-
 menu{
-  list-style: none;
-  margin: 1.5rem auto  ;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+.intro, .features, .articles{
+  padding: calc(variables.$padding + 3rem) variables.$padding;
+  text-align: center;
 }
 
+.features-title, .articles-title{
+  font-weight: 500;
+  font-size: 1.95rem;
+}

@@ -1,0 +1,31 @@
+@use "./variables";
+
+.features {
+  background-color: variables.$light-grayish-blue;
+  padding-bottom: 2rem !important;
+
+  .features-title {
+    width: 65vw;
+    margin: auto;
+
+  }
+  .text-content {
+    // margin: 1.3rem 0 4rem;
+    margin: 1.3rem auto 4rem;
+    opacity: .9;
+  }
+
+  .feature {
+
+    margin: 2rem 0;
+    .content {
+
+      margin: auto;
+    }
+
+    .title {
+      font-size: 1.35em;
+      font-weight: 400;
+    }
+  }
+}

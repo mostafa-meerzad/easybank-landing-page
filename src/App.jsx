@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Header from './components/Header';
-import Reason from './components/reason';
+import {Feature} from './components/Feature';
 import Article from './components/Article';
 import { Facebook, Instagram, Pinterest, Twitter, Youtube, Logo } from './assets/images/images';
 
@@ -29,35 +29,35 @@ const App = () => {
 <main className="main">
 
 <section className="intro">  
-<h1> Next generation digital banking </h1>
-<p className='content'>
+<h1 className='intro-title'> Next generation digital banking </h1>
+<p className='intro-content text-content'>
 
  Take your financial life online. Your Easybank account will be a one-stop-shop 
  for spending, saving, budgeting, investing, and much more.
 </p>
-<button className='invite-btn mobile'>Request Invite</button>
+<button className='invite-btn'>Request Invite</button>
 </section>
   
-  <section className="reasons">
+  <section className="features">
 
-    <h2>Why choose Easybank?</h2>
-    <p className="content">   
+    <h2 className='features-title'>Why choose Easybank?</h2>
+    <p className="features-content text-content">   
   We leverage Open Banking to turn your bank account into your financial hub. Control 
   your finances like never before.
     </p>
 
 
-    <Reason title={" Online Banking"} content={"Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."} src={online}/>
+    <Feature title={" Online Banking"} content={"Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."} src={online}/>
     
-    <Reason title={"Simple Budgeting"} content={" Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."} src={budgeting}/>
+    <Feature title={"Simple Budgeting"} content={" Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."} src={budgeting}/>
 
-    <Reason title={"Fast Onboarding"} content={"We don’t do branches. Open your account in minutes online and start taking control of your finances right away."} src={onBoarding}/>
+    <Feature title={"Fast Onboarding"} content={"We don’t do branches. Open your account in minutes online and start taking control of your finances right away."} src={onBoarding}/>
 
-    <Reason title={" Open API"} content={"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."} src={api}/>
+    <Feature title={" Open API"} content={"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."} src={api}/>
   </section>
 
   <section className="articles">
-    <h2>Latest Articles</h2>
+    <h2 className='articles-title'>Latest Articles</h2>
 
     <Article author={"By Claire Robinson"} title={"Receive money in any currency with no fees"} content={"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"} src={currency}/>
 
@@ -86,11 +86,11 @@ const App = () => {
 
   <menu className="contacts">
   
-    <li className="link"> About Us</li>
-    <li className="link">Contact</li>
-    <li className="link">  Blog</li>
-    <li className="link">  Support</li>
-    <li className="link">  Privacy Policy</li>
+    <li className="contact-link"> About Us</li>
+    <li className="contact-link">Contact</li>
+    <li className="contact-link">  Blog</li>
+    <li className="contact-link">  Support</li>
+    <li className="contact-link">  Privacy Policy</li>
   </menu>
 
   

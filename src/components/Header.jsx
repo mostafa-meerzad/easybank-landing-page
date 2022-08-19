@@ -24,7 +24,7 @@ const Header = () => {
             <Hamburger className={!isMenuActive ? "active": ""}/>
             <Close className={isMenuActive ? "active": ""}/>
         </div>
-        <button className="invite-btn"> <span>Request Invite</span></button>
+        <button className="invite-btn"> Request Invite</button>
             
         </header>
     );

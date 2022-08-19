@@ -5,18 +5,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5em;
+  // padding: 1.5em;
+  padding: variables.$padding;
   z-index: 1;
   margin: 0;
-  background-color: variables.$very-light-gray;
+  background-color: variables.$white;
+  // border: 2px solid red;
 
   .menu-icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    // @media all and (min-width: variables.$desktop-breakpoint) {
-    //   display: none;
-    // }
   }
 
   .menu-icon {
@@ -35,14 +34,6 @@
     top: 100%;
 
     background-image: linear-gradient(variables.$dark-blue, transparent);
-
-    // @media all and (min-width: variables.$desktop-breakpoint) {
-    //   width: auto;
-    //   height: auto;
-    //   top: auto;
-    //   left: auto;
-
-    // }
     menu {
       padding: variables.$padding;
       width: 90vw;
@@ -54,18 +45,15 @@
       align-items: center;
       flex-direction: column;
       background-color: variables.$very-light-gray;
-      // margin:  variables.$padding auto;
+      margin:  variables.$padding auto;
       border-radius: variables.$border-radius;
       z-index: 1;
-      // @media all and (min-width: variables.$desktop-breakpoint) {
-      //   width: auto;
-      //   flex-direction: row;
-      // }
 
       .nav-link {
-        padding: calc(variables.$padding - 0.6em);
+        padding: calc(variables.$padding - 0.7em);
         font-size: 1.1em;
         font-weight: 600;
+        // border: 2px solid red;
       }
     }
   }
@@ -80,9 +68,7 @@
   @media all and (min-width: variables.$desktop-breakpoint) {
     display: flex;
     justify-content: space-between;
-    // border: 2px solid red;
     padding: 0rem 10vw;
-    // height: 5rem;
     .menu-icon-container {
       display: none;
     }
@@ -90,7 +76,6 @@
     .invite-btn {
       display: inline;
       margin: 0;
-      // padding: ;
     }
 
     nav {
@@ -101,21 +86,18 @@
       top: auto;
       left: auto;
       display: block;
-      // border: 2px solid red;
       background-image: none;
       menu {
         flex-direction: row;
-        // border: 2px solid red;
         max-width: fit-content;
         padding: 0;
-
         margin: 0;
+        background-color: variables.$white;
         .nav-link {
-          // padding: auto 4rem;
           margin: 0 1.6rem;
-          padding: 3rem 0 ;
-          // color: red;
+          padding: 1.8rem 0 ;
           color: variables.$grayish-blue;
+       
 
           &:hover::after{
             content: "";

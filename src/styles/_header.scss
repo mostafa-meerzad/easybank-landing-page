@@ -7,16 +7,16 @@
   align-items: center;
   padding: 1.5em;
   z-index: 1;
-  // margin: -1rem;
   margin: 0;
-//   position: absolute;
-background-color: variables.$very-light-gray;
-
+  background-color: variables.$very-light-gray;
 
   .menu-icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    // @media all and (min-width: variables.$desktop-breakpoint) {
+    //   display: none;
+    // }
   }
 
   .menu-icon {
@@ -25,65 +25,112 @@ background-color: variables.$very-light-gray;
   .menu-icon.active {
     display: block;
   }
-// border: 2px solid red;
 
-  nav{
-    // top: 0;
+  nav {
     left: 0;
     display: none;
     position: absolute;
     width: 100vw;
     height: 900%;
     top: 100%;
-    // border: 2px solid blue;s
-    // z-index: 0;
- 
-  background-image: linear-gradient(variables.$dark-blue, transparent);
-  // background-image: linear-gradient(hsla(233, 26%, 24%), transparent);
-  // opacity: .3;
-    // opacity: .5;
-    // margin: 0;
-    // justify-content: center;
-    // align-items: center;
 
-    menu{
-      // opacity: 1;
+    background-image: linear-gradient(variables.$dark-blue, transparent);
 
-       
-        padding: variables.$padding;
-     
-        width: 90vw;
-        // height: 50vh;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        // background-color: variables.$white;
-        // z-index: 2
-        // background-color: variables.$white;
-        background-color: variables.$very-light-gray;
+    // @media all and (min-width: variables.$desktop-breakpoint) {
+    //   width: auto;
+    //   height: auto;
+    //   top: auto;
+    //   left: auto;
 
-        border-radius: variables.$border-radius;
-        z-index: 1;
-        // opacity: 1;
-        // margin: 0;
+    // }
+    menu {
+      padding: variables.$padding;
+      width: 90vw;
+      max-width: 30rem;
+      // height: 50vh;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: variables.$very-light-gray;
+      // margin:  variables.$padding auto;
+      border-radius: variables.$border-radius;
+      z-index: 1;
+      // @media all and (min-width: variables.$desktop-breakpoint) {
+      //   width: auto;
+      //   flex-direction: row;
+      // }
 
-
-        .nav-link{
-            padding: calc(variables.$padding - .6em);
-            font-size: 1.1em;
-            font-weight: 600;
-            // color: variables.$dark-blue;
-        }
+      .nav-link {
+        padding: calc(variables.$padding - 0.6em);
+        font-size: 1.1em;
+        font-weight: 600;
+      }
     }
   }
 
-  nav.active{
+  nav.active {
     display: flex;
   }
-  .invite-btn{
+  .invite-btn {
     display: none;
   }
 
+  @media all and (min-width: variables.$desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    // border: 2px solid red;
+    padding: 0rem 10vw;
+    // height: 5rem;
+    .menu-icon-container {
+      display: none;
+    }
+
+    .invite-btn {
+      display: inline;
+      margin: 0;
+      // padding: ;
+    }
+
+    nav {
+      position: relative;
+      width: fit-content;
+      height: auto;
+      // top: 0;
+      top: auto;
+      left: auto;
+      display: block;
+      // border: 2px solid red;
+      background-image: none;
+      menu {
+        flex-direction: row;
+        // border: 2px solid red;
+        max-width: fit-content;
+        padding: 0;
+
+        margin: 0;
+        .nav-link {
+          // padding: auto 4rem;
+          margin: 0 1.6rem;
+          padding: 3rem 0 ;
+          // color: red;
+          color: variables.$grayish-blue;
+
+          &:hover::after{
+            content: "";
+            position: absolute;
+            display: inline;
+            width: 100%;
+            height: 5px;
+            background-image: linear-gradient(90deg,variables.$lime-green, variables.$bright-cyan);
+            top: 96%;
+            left: 0;
+            border-radius: variables.$border-radius;
+
+          }
+        }
+      }
+    }
+  }
 }

@@ -49,7 +49,7 @@ ul{
   background-image:linear-gradient(110deg,variables.$lime-green, variables.$bright-cyan);
   color: variables.$white;
   margin: 0 auto;
-  max-width: 2rem;
+  // max-width: 2rem;
 
   &:active::before{
     content: "";

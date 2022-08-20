@@ -94,16 +94,16 @@ title={"Take your Easybank card wherever you go"} content={"We want you to enjoy
 
   <menu className="contacts">
   
-    <div>
+    <ul>
     <li className="contact-link"> About Us</li>
     <li className="contact-link">Contact</li>
     <li className="contact-link">  Blog</li>
-    </div>
-    <div>
+    </ul>
+    <ul>
     <li className="contact-link">  Careers</li>
     <li className="contact-link">  Support</li>
     <li className="contact-link">  Privacy Policy</li>
-    </div>
+    </ul>
   </menu>
 
   

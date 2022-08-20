@@ -3,7 +3,7 @@ function BgIntroDesktop (){
     return(
         <svg xmlns="http://www.w3.org/2000/svg"  width="1198.322" height="956" viewBox="0 0 1198.322 956">
   <defs>
-    <linearGradient id="linear-gradient" y1="0.361" x2="0.996" y2="0.637" gradientUnits="objectBoundingBox">
+    <linearGradient  y1="0.361" x2="0.996" y2="0.637" gradientUnits="objectBoundingBox">
       <stop offset="0" stopColor="#33d35e"/>
       <stop offset="1" stopColor="#2ab6d9"/>
     </linearGradient>
@@ -22,7 +22,7 @@ function BgIntroMobile() {
     return(
         <svg xmlns="http://www.w3.org/2000/svg" width="862.409" height="398" viewBox="0 0 862.409 398">
   <defs>
-    <linearGradient id="linear-gradient" y1="0.361" x2="0.996" y2="0.637" gradientUnits="objectBoundingBox">
+    <linearGradient  y1="0.361" x2="0.996" y2="0.637" gradientUnits="objectBoundingBox">
       <stop offset="0" stopColor="#33d35e"/>
       <stop offset="1" stopColor="#2ab6d9"/>
     </linearGradient>
@@ -41,7 +41,7 @@ function IconApi() {
     return(
         <svg id="icon-api" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
   <defs>
-    <linearGradient id="linear-gradient" x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
+    <linearGradient  x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
       <stop offset="0" stopColor="#33d35e"/>
       <stop offset="1" stopColor="#2ab6d9"/>
     </linearGradient>
@@ -57,7 +57,7 @@ function Budgeting(){
     return (
         <svg id="icon-budgeting" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
   <defs>
-    <linearGradient id="linear-gradient" x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
+    <linearGradient  x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
       <stop offset="0" stopColor="#33d35e"/>
       <stop offset="1" stopColor="#2ab6d9"/>
     </linearGradient>
@@ -112,7 +112,7 @@ function Onboarding(){
     return(
         <svg id="icon-onboarding" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
   <defs>
-    <linearGradient id="linear-gradient" x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
+    <linearGradient  x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
       <stop offset="0" stopColor="#33d35e"/>
       <stop offset="1" stopColor="#2ab6d9"/>
     </linearGradient>
@@ -128,7 +128,7 @@ function online(){
     return (
         <svg id="icon-online" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
   <defs>
-    <linearGradient id="linear-gradient" x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
+    <linearGradient  x2="0.996" y2="0.996" gradientUnits="objectBoundingBox">
       <stop offset="0" stopColor="#33d35e"/>
       <stop offset="1" stopColor="#2ab6d9"/>
     </linearGradient>
@@ -177,7 +177,7 @@ function Logo(){
     return (
         <svg id="logo" xmlns="http://www.w3.org/2000/svg"  width="138.759" height="19.704" viewBox="0 0 138.759 19.704">
   <defs>
-    <linearGradient id="linear-gradient" x1="0.722" x2="0.175" y2="1" gradientUnits="objectBoundingBox">
+    <linearGradient  x1="0.722" x2="0.175" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stopColor="#33d35e"/>
       <stop offset="1" stopColor="#2ab6d9"/>
     </linearGradient>

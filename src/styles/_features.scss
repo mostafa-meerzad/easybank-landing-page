@@ -2,22 +2,19 @@
 
 .features {
   background-color: variables.$light-grayish-blue;
-  padding-bottom: 2rem !important;
-
   .features-title {
     width: 65vw;
     margin: auto;
 
   }
   .text-content {
-    // margin: 1.3rem 0 4rem;
     margin: 1.3rem auto 4rem;
     opacity: .9;
   }
 
   .feature {
 
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     .content {
 
       margin: auto;
@@ -26,6 +23,28 @@
     .title {
       font-size: 1.35em;
       font-weight: 400;
+    }
+  }
+
+
+  @media all and (min-width: variables.$desktop-breakpoint) {
+.features-title{
+  margin: 0;
+  text-align: start;
+  font-size: 2.3rem;
+}
+
+.text-content{
+  text-align: start;
+margin: 1rem 0;
+}
+    .features-container{
+      display: flex;
+
+      .feature{
+        text-align: start;
+        margin:  1rem ;
+      }
     }
   }
 }

@@ -1,42 +1,59 @@
 @use "./variables";
-.intro{
-    position: relative;
-    // top: 0rem;
-    margin: 0;
 
-    background-image:url("../assets//images/image-mockups.png"), url("../assets/images/bg-intro-mobile.svg");
-    background-size: 90vw, 100vw;
-    background-position: center -32vw, 0 -18vw;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content:flex-end;
-    flex-direction: column;
-    background-color: variables.$very-light-gray;
-    padding-bottom: 5.5rem !important;
-    padding-top: 83% !important;
+// use a more specific selector to overwrite styles form (styles.scss)
+section.intro {
+  position: relative;
+  margin: 0;
+  background-image: url("../assets//images/image-mockups.png"),
+    url("../assets/images/bg-intro-mobile.svg");
+  background-size: 90vw, 100vw;
+  background-position: center -32vw, 0 -18vw;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: variables.$very-light-gray;
+  padding-bottom: 5.5rem;
+  padding-top: 83%;
 
-    .intro-title{
-        font-size: 2.4em;
-        text-align: center;
-        font-weight: 400;
-        margin: .5em 0 ;
-   
+  .intro-title {
+    font-size: 2.4em;
+    text-align: center;
+    font-weight: 400;
+    margin: 0.5em 0;
+  }
+  .text-content {
+    margin-bottom: variables.$padding + 1rem;
+  }
+
+  @media all and (min-width: variables.$desktop-breakpoint) {
+    background-image: url("../assets/images/bg-intro-desktop.svg");
+
+    background-size: 75vw;
+    background-position: 47.5vw -15.5vw;
+    align-items: flex-start;
+    height: 41vw;
+    padding: 9vw 63vw 9vw 10vw;
+    align-items: flex-start;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40vw;
+      height: 140vw;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      background-image: url("../assets/images/image-mockups.png");
+      background-size: 115%;
+      background-repeat: no-repeat;
+      background-position: -31% -8.5%;
     }
-    .text-content{
-        margin-bottom:variables.$padding + 1rem;
-      
+
+    .intro-title {
+      text-align: start;
+      font-size: 3rem;
     }
-   
-    @media all and (min-width:variables.$desktop-breakpoint){
-        // url("../assets/images/image-mockups.png"),
-        background-image:   url("../assets/images/bg-intro-desktop.svg");
-
-        background-size:80%;
-        background-position: 47.5vw  -16.5vw  ;
-
-        padding-top: 0;
-        align-items: flex-start;
-    }
-
-    
+  }
 }

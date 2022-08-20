@@ -40,34 +40,42 @@ const App = () => {
   
   <section className="features">
 
-    <h2 className='features-title'>Why choose Easybank?</h2>
+ {/* <header> */}
+ <h2 className='features-title'>Why choose Easybank?</h2>
     <p className="features-content text-content">   
   We leverage Open Banking to turn your bank account into your financial hub. Control 
   your finances like never before.
     </p>
+ {/* </header> */}
 
-
-    <Feature title={" Online Banking"} content={"Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."} src={online}/>
+<div className="features-container">
+  
+<Feature title={" Online Banking"} content={"Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."} src={online}/>
     
     <Feature title={"Simple Budgeting"} content={" Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."} src={budgeting}/>
 
     <Feature title={"Fast Onboarding"} content={"We don’t do branches. Open your account in minutes online and start taking control of your finances right away."} src={onBoarding}/>
 
     <Feature title={" Open API"} content={"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."} src={api}/>
+</div>
   </section>
 
   <section className="articles">
-    <h2 className='articles-title'>Latest Articles</h2>
+   <header>
+   <h2 className='articles-title'>Latest Articles</h2>
+   </header>
+<div className="articles-container">
+  
+<Article author={"By Claire Robinson"} title={"Receive money in any currency with no fees"} content={"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"} src={currency}/>
 
-    <Article author={"By Claire Robinson"} title={"Receive money in any currency with no fees"} content={"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"} src={currency}/>
+<Article author={"By Wilson Hutton"} title={"Treat yourself without worrying about money"} content={"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"} src={restaurant}/>
 
-    <Article author={"By Wilson Hutton"} title={"Treat yourself without worrying about money"} content={"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"} src={restaurant}/>
+<Article author={
+"By Wilson Hutton"}
+title={"Take your Easybank card wherever you go"} content={"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"} src={plane} />
 
-    <Article author={
-  "By Wilson Hutton"}
-  title={"Take your Easybank card wherever you go"} content={"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"} src={plane} />
-
-  <Article  author={"By Claire Robinson"} title={"Our invite-only Beta accounts are now live!"} content={"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."} src={confetti}/>
+<Article  author={"By Claire Robinson"} title={"Our invite-only Beta accounts are now live!"} content={"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."} src={confetti}/>
+</div>
   </section>
 
 </main>
@@ -86,11 +94,16 @@ const App = () => {
 
   <menu className="contacts">
   
+    <div>
     <li className="contact-link"> About Us</li>
     <li className="contact-link">Contact</li>
     <li className="contact-link">  Blog</li>
+    </div>
+    <div>
+    <li className="contact-link">  Careers</li>
     <li className="contact-link">  Support</li>
     <li className="contact-link">  Privacy Policy</li>
+    </div>
   </menu>
 
   

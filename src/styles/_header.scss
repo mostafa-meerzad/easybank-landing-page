@@ -5,12 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding: 1.5em;
   padding: variables.$padding;
-  z-index: 1;
+  z-index: 100;
   margin: 0;
   background-color: variables.$white;
-  // border: 2px solid red;
+
 
   .menu-icon-container {
     display: flex;
@@ -21,6 +20,7 @@
   .menu-icon {
     display: none;
   }
+
   .menu-icon.active {
     display: block;
   }
@@ -34,11 +34,11 @@
     top: 100%;
 
     background-image: linear-gradient(variables.$dark-blue, transparent);
+
     menu {
       padding: variables.$padding;
       width: 90vw;
       max-width: 30rem;
-      // height: 50vh;
       height: fit-content;
       display: flex;
       justify-content: center;
@@ -53,7 +53,6 @@
         padding: calc(variables.$padding - 0.7em);
         font-size: 1.1em;
         font-weight: 600;
-        // border: 2px solid red;
       }
     }
   }
@@ -68,7 +67,8 @@
   @media all and (min-width: variables.$desktop-breakpoint) {
     display: flex;
     justify-content: space-between;
-    padding: 0rem 10vw;
+    padding: 0rem 9.6vw;
+
     .menu-icon-container {
       display: none;
     }
@@ -82,23 +82,23 @@
       position: relative;
       width: fit-content;
       height: auto;
-      // top: 0;
       top: auto;
       left: auto;
       display: block;
       background-image: none;
+
       menu {
         flex-direction: row;
         max-width: fit-content;
         padding: 0;
         margin: 0;
         background-color: variables.$white;
+
         .nav-link {
-          margin: 0 1.6rem;
+          margin: 0 1.4rem;
           padding: 1.8rem 0 ;
           color: variables.$grayish-blue;
        
-
           &:hover::after{
             content: "";
             position: absolute;
